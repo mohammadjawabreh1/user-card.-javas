@@ -1,0 +1,38 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+img
+{
+    width: 100%;
+}
+
+.users 
+{
+    margin-top: 50px;
+    width: 90% ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box 
+{
+    
+    position: relative;
+    background-color: #ececec;
+    padding: 20px;
+    width:clamp(300px , 40% , 500px) ;
+    border-radius: 10px;
+}
+.users .box img
+{
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    transform: translate(50% , -50%);
+}
